@@ -1,8 +1,14 @@
 ## React Native
 
-- Create React-Native Project: `npx react-native@latest init project_name`
+- `Create React-Native Project:` 
+```bash
+npx react-native@latest init project_name
+```
 
-- Run React-Native Project: `npm start`
+- `Run React-Native Project:`
+```bash
+npx react-native@latest init project_name
+```
 
 React Native is an open-source framework developed by Facebook for building mobile applications using JavaScript and React. It allows developers to use React, a popular JavaScript library for building user interfaces, to create native mobile applications for iOS and Android platforms. With React Native, developers can write code once and run it on both iOS and Android, saving time and effort compared to developing separate codebases for each platform.
 
