@@ -10,7 +10,7 @@ expo -v
 npm install --global expo-cli eas-cli
 ```
 
-3. Create an expo account and login: [Click on these link to create or login to expo account]( https://expo.dev/signup)
+3. Create an expo account and login: [Click on me to create or login to expo account]( https://expo.dev/signup)
 
 4. Log in to cmd using expo credentials, Open cmd and run the below command
 ```bash
@@ -50,4 +50,4 @@ eas build -p android --profile preview
 ```
 
 8. Download the apk from the above generated link from expo dev accounts dashboard.
-[Now click on me to donwload apk](expo.dev)
+[Now click on me to donwload apk](https://wwww.expo.dev)
