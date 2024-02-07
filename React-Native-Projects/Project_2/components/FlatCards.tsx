@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
   headingText: {
     fontSize: 24,
     fontWeight: 'bold',
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
+    color: 'salmon'
   },
   container: {
     flex: 1,

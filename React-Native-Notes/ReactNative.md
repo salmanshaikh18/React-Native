@@ -224,3 +224,66 @@ Here's a basic explanation of how to use `ScrollView` in React Native:
    ```
 
 Remember that while `ScrollView` is suitable for smaller amounts of scrollable content, for larger lists of data, you might want to consider using `FlatList` or `SectionList` for better performance and efficiency. These components are optimized for rendering large lists in a more performant way than `ScrollView`.
+
+
+## Image
+
+In React Native, displaying images can be accomplished using the `Image` component. Here's a basic guide on how to use the `Image` component:
+
+1. **Import Image Component:**
+   Import the `Image` component from the `react-native` library.
+
+   ```javascript
+   import { Image } from 'react-native';
+   ```
+
+2. **Load Local Image:**
+   To display a local image, provide the `source` prop with the path to the image file relative to your project. For example, if your image is in the same directory as your component file:
+
+   ```javascript
+   <Image source={require('./path/to/your/image.jpg')} />
+   ```
+
+3. **Load Remote Image:**
+   To display an image from a remote URL, use the `uri` property in the `source` prop.
+
+   ```javascript
+   <Image source={{ uri: 'https://example.com/path/to/remote/image.jpg' }} />
+   ```
+
+4. **Styling and Dimensions:**
+   You can style the `Image` component just like any other React Native component. Additionally, you can specify the dimensions of the image using the `style` prop.
+
+   ```javascript
+   <Image
+     source={require('./path/to/your/image.jpg')}
+     style={{ width: 200, height: 100 }}
+   />
+   ```
+
+5. **Handling Loading and Errors:**
+   You may want to handle loading states and errors when dealing with remote images. The `onLoad` and `onError` props can be used for this purpose.
+
+   ```javascript
+   <Image
+     source={{ uri: 'https://example.com/path/to/remote/image.jpg' }}
+     onLoad={() => console.log('Image loaded successfully')}
+     onError={() => console.log('Error loading image')}
+   />
+   ```
+
+6. **Image Background and Border:**
+   You can use the `ImageBackground` component to add a background or apply styling to the image. This component supports child components and allows you to create more complex layouts.
+
+   ```javascript
+   import { ImageBackground, Text } from 'react-native';
+
+   <ImageBackground
+     source={require('./path/to/your/image.jpg')}
+     style={{ width: '100%', height: '100%' }}
+   >
+     <Text>Your overlay content here</Text>
+   </ImageBackground>
+   ```
+
+These are the basic steps for using the `Image` component in React Native. Adjust the paths, URLs, and styles based on your specific requirements. Additionally, keep in mind that handling image dimensions, optimizing for various screen sizes, and considering performance are essential aspects when working with images in a mobile app.

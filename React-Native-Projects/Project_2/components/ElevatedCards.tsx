@@ -7,7 +7,7 @@ export default function ElevatedCards() {
       <Text style={styles.headingText}>Elevated Cards</Text>
       <ScrollView style={styles.container} horizontal={true}>
         <View style={[styles.card, styles.cardElevated]}>
-            <Text>Tap</Text>
+            <Text>Scroll</Text>
         </View>
         <View style={[styles.card, styles.cardElevated]}>
             <Text>me</Text>
@@ -30,7 +30,8 @@ const styles = StyleSheet.create({
     headingText: {
         fontSize: 24,
         fontWeight: 'bold',
-        paddingHorizontal: 10
+        paddingHorizontal: 10,
+        color: 'salmon'
     },
     container: {
         padding: 8,
