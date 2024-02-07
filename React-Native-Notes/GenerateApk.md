@@ -50,4 +50,4 @@ eas build -p android --profile preview
 ```
 
 8. Download the apk from the above generated link from expo dev accounts dashboard.
-[Now click on me to donwload apk](https://wwww.expo.dev)
+[Now click on me to donwload apk](https://expo.dev/)
