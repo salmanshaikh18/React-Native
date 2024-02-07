@@ -61,9 +61,11 @@ const styles = StyleSheet.create({
   main: {
     marginBottom: 22,
   },
-  container: {},
+  container: {
+    paddingHorizontal: 5
+  },
   userCard: {
-    backgroundColor: '#fff',
+    backgroundColor: '#154c79',
     margin: 5,
     borderRadius: 10,
     // padding: 10,
@@ -80,10 +82,12 @@ const styles = StyleSheet.create({
   userName: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: '#fff'
     // textAlign: 'center'
   },
   userStatus: {
     fontSize: 15,
+    color: '#fff',
     // textAlign: 'center'
   },
 });
