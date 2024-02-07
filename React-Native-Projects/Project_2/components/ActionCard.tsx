@@ -48,31 +48,61 @@ export default function ActionCard() {
 
 const styles = StyleSheet.create({
     headingText: {
-
+        fontSize: 24,
+        fontWeight: 'bold',
+        paddingHorizontal: 10,
+        color: 'salmon'
     },
     card: {
-
+        width: 340,
+        height: 425,
+        borderRadius: 10,
+        margin: 10,
+        overflow: 'hidden',
+        marginBottom: 22,
     },
     elevatedCard: {
-
+        backgroundColor: '#fff',
+        padding: 10,
+        // borderRadius: 10,
+        elevation: 3,
+        shadowOffset: {
+            width: 1,
+            height: 1,
+        },
+        shadowColor: 'red',
+        shadowOpacity: 0.4
     },
     headingContainer: {
-
+        height: 55,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     headerText: {
-
+        color: '#000',
+        fontSize: 16,
+        fontWeight: '600'
     },
     cardImage: {
         height: 200,
-        width: 360
+        width: 320,
+        borderRadius: 10,
     },
     bodyContainer: {
-
+        padding: 10,
     },
     footerContainer: {
-
+        padding: 8,
+        flexDirection: 'row',
+        // alignItems: 'center',
+        justifyContent: 'space-evenly'
     },
     socialLinks: {
-        
+        fontSize: 18,
+        color: '#fff',
+        backgroundColor: 'salmon',
+        padding: 10,
+        borderRadius: 5,
     }
 })
