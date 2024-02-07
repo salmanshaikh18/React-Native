@@ -287,3 +287,123 @@ In React Native, displaying images can be accomplished using the `Image` compone
    ```
 
 These are the basic steps for using the `Image` component in React Native. Adjust the paths, URLs, and styles based on your specific requirements. Additionally, keep in mind that handling image dimensions, optimizing for various screen sizes, and considering performance are essential aspects when working with images in a mobile app.
+
+
+## Linking
+
+In React Native, the `Linking` API allows you to integrate deep linking and handle links to external content such as websites, emails, phone numbers, and more. It provides methods to open URLs, check if a URL can be opened, and handle incoming deep links.
+
+Here's a basic guide on using the `Linking` API in React Native:
+
+1. **Import Linking:**
+   Import the `Linking` module from the `react-native` library.
+
+   ```javascript
+   import { Linking } from 'react-native';
+   ```
+
+2. **Open a URL:**
+   You can use `Linking.openURL()` to open a URL in the default app. For example, opening a website:
+
+   ```javascript
+   Linking.openURL('https://www.example.com');
+   ```
+
+3. **Check if URL can be opened:**
+   You can use `Linking.canOpenURL()` to check if a URL can be opened. This can be useful to handle cases where the URL might not be supported.
+
+   ```javascript
+   Linking.canOpenURL('https://www.example.com').then((supported) => {
+     if (supported) {
+       Linking.openURL('https://www.example.com');
+     } else {
+       console.error("Don't know how to open URI: https://www.example.com");
+     }
+   });
+   ```
+
+4. **Handling Deep Links:**
+   To handle incoming deep links, you can use `Linking.addEventListener()` to listen for URL changes. For example, in a component's `componentDidMount` lifecycle method:
+
+   ```javascript
+   componentDidMount() {
+     Linking.addEventListener('url', this.handleDeepLink);
+     // Initial check for deep link
+     Linking.getInitialURL().then((url) => {
+       if (url) {
+         this.handleDeepLink({ url });
+       }
+     });
+   }
+
+   componentWillUnmount() {
+     // Remove the event listener when the component is unmounted
+     Linking.removeEventListener('url', this.handleDeepLink);
+   }
+
+   handleDeepLink = (event) => {
+     // Handle the deep link here
+     console.log('Received deep link:', event.url);
+   };
+   ```
+
+   In this example, the `handleDeepLink` function is called when a deep link is detected.
+
+Remember to handle permissions, especially when opening phone numbers, email addresses, or other sensitive data. Additionally, check the documentation for any platform-specific considerations.
+
+
+## TouchableOpacity
+
+`TouchableOpacity` is a React Native component that provides a touchable and interactive wrapper around its child components. It's commonly used to create touchable elements, such as buttons, where the opacity of the component changes when it's pressed.
+
+Here's a basic example of using `TouchableOpacity`:
+
+```javascript
+import React from 'react';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+
+const MyTouchableComponent = () => {
+  const handlePress = () => {
+    // Handle the press event
+    console.log('Button pressed!');
+  };
+
+  return (
+    <View style={styles.container}>
+      <TouchableOpacity onPress={handlePress} style={styles.button}>
+        <Text style={styles.buttonText}>Press me!</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  button: {
+    backgroundColor: 'blue',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+});
+
+export default MyTouchableComponent;
+```
+
+In this example:
+
+- `TouchableOpacity` wraps a `Text` component to create a touchable button.
+- The `onPress` prop is used to specify the function that should be executed when the button is pressed.
+- Styles are applied to customize the appearance of the button, including background color, padding, and border radius.
+
+When the button is pressed, the `handlePress` function will be called, and you can perform any desired actions within that function.
+
+Remember that `TouchableOpacity` automatically adjusts the opacity of its child components to give feedback to the user when the touch occurs. The opacity change provides a visual indication that the button has been pressed.
