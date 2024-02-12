@@ -5,27 +5,31 @@ export default function ContactList() {
   const contacts = [
     {
       uid: 1,
-      name: 'Hitesh Choudhary',
+      name: 'Zoya luen',
       status: 'Just an extra oridinary developer',
-      imageUrl: 'https://avatars.githubusercontent.com/u/11613311?v=4',
+      // imageUrl: 'https://avatars.githubusercontent.com/u/11613311?v=4',
+      imageUrl: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
       uid: 2,
-      name: 'Anurag Tiwari',
+      name: 'Ilya Pavlov',
       status: 'I ❤️ To Code and Teach!',
-      imageUrl: 'https://avatars.githubusercontent.com/u/94738352?v=4',
+      // imageUrl: 'https://avatars.githubusercontent.com/u/94738352?v=4',
+      imageUrl: 'https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
       uid: 3,
-      name: 'Sanket Singh',
+      name: 'averie woodard',
       status: 'Making your GPay smooth',
-      imageUrl: 'https://avatars.githubusercontent.com/u/29747452?v=4',
+      // imageUrl: 'https://avatars.githubusercontent.com/u/29747452?v=4',
+      imageUrl: 'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
       uid: 4,
-      name: 'Anirudh Jwala',
+      name: 'Ayo Ogunseinde',
       status: 'Building secure Digital banks',
-      imageUrl: 'https://avatars.githubusercontent.com/u/25549847?v=4',
+      // imageUrl: 'https://avatars.githubusercontent.com/u/25549847?v=4',
+      imageUrl: 'https://images.unsplash.com/photo-1534008757030-27299c4371b6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
   ];
   return (
