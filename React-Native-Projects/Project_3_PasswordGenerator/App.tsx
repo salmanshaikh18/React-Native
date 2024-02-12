@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 // Form valudation
 import * as Yup from 'yup'
 
@@ -11,7 +11,26 @@ const PasswordSchema = Yup.object().shape({
 })
 
 export default function App() {
-  
+
+  const [password, setPassword] = useState('')
+  const [isPasswordGenerated, setIsPasswordGenerated] = useState(false)
+
+  const [uppercase, setUppercase] = useState(false)
+  const [numbers, useNumbers] = useState(false)
+  const [symbols, useSymbols] = useState(false)
+
+  const generatePasswordString = (passwordLength: number) => {
+
+  }
+
+  const createPassword = (characters: string, passwordLength: number) {
+
+  }
+
+  const resetPassword = () => {
+    
+  }
+
   return (
     <View>
       <Text>App</Text>
