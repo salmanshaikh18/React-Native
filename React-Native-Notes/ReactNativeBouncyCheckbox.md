@@ -60,3 +60,15 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
 | disableBuiltInState     | boolean    | false           | Enable/disable manually handling the isChecked prop and disable built-in handling.                              |
 | textContainerStyle      | ViewStyle  | default         | Set/override the text container style.                                                                          |
 | TouchableComponent      | Component  | TouchableOpacity | Set/override the main TouchableOpacity component with any Touchable Component like Pressable.                   |
+
+
+## Animation Configurations
+
+| Property          | Type    | Default | Description                                       |
+|-------------------|---------|---------|---------------------------------------------------|
+| bounceEffectIn    | number  | 0.9     | Change the bounce effect when pressed in.         |
+| bounceEffectOut   | number  | 1       | Change the bounce effect when pressed out.        |
+| bounceVelocityIn  | number  | 0.1     | Change the bounce velocity when pressed in.       |
+| bounceVelocityOut | number  | 0.4     | Change the bounce velocity when pressed out.      |
+| bouncinessIn      | number  | 20      | Change the bounciness when pressed in.            |
+| bouncinessOut     | number  | 20      | Change the bounciness when pressed out.           |
