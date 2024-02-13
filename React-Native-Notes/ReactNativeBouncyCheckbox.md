@@ -1,6 +1,6 @@
 ## react-native-bouny-checkbox library
 
-[react-native-bouny-checkbox library](https://www.npmjs.com/package/react-native-bouncy-checkbox)
+[Learn more about react-native-bouny-checkbox library](https://www.npmjs.com/package/react-native-bouncy-checkbox)
 
 ## Installation
 
